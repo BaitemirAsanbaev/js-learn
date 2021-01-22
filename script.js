@@ -1,54 +1,66 @@
-// //variables
-// let a = +prompt(" ");
-// let b = +prompt(" ");
-// //result variables
-// let addition = a + b;
-// let subtraction = a - b;
-// let multiplication = a * b;
-// let divition = a / b;
-// //functions
-// console.log(a + "+" + b + "=" + addition);
-// console.log(a + "-" + b + "=" + subtraction);
-// console.log(a + "x" + b + "=" + multiplication);
-// console.log(a + "/" + b + "=" + divition);
-// //data types
-// let num = 17_000_000_000; //number
-// let name = "Baitemir"; //string
-// let bool = true; //boolean
-// let undef = undefined; //undefind
-// let not = null; //null
-
-// let independenceDate = prompt("When is independence day (year)");
-
-// if(isNaN(independenceDate)){
-//     console.log("enter a date please")
-// }
-// else{
-//     if(independenceDate > 1991){
-//             console.log("too late");
-//         }
-//     else if(independenceDate < 1991){
-//         console.log("too early")
-//     }
-//     else{
-//         console.log("yes");
-//     }
-// }
-
-
-
-
-
-
 //variables
-let a = prompt("What is A?");
-let b = prompt("what is B");
-let ost = a % b;
+
+//score
+let score = 0;
+//queestions
+let question1 = prompt("2 + 2");
+let answer1 = 4;
+let question2 = prompt("the highest mountain");
+let answer2 = "Everest";
+let question3 = prompt("owner of Facebook company");
+let answer3 = "Mark Zuckerberg";
+let question4 = prompt("the capital of Kyrgyzstan");
+let answer4 = "Bishkek";
+let question5 = prompt("country with the biggest population");
+let answer5 = "China";
+let question6 = prompt("Marvel Studios main producer");
+let answer6 = "Kevin Faige";
+let question7 = prompt("How many teeth peaple has");
+let answer7 = 32;
+let question8 = prompt("OS created by Linus Torvalds");
+let answer8 = "Linux";
+let questin9 = prompt("PHP, Python, Ruby, Node.js are languages for ...");
+let answer9 = "Backend";
+let question10 = prompt("What happaned in 1916");
+let answer10 = "Urkun";
+let question11 = prompt("Who is the best person ever");
+let answer11 = "Baitemir";
 
 //functions
-if(ost == 0){
-    console.log("there is no ostatok")
+
+//questions functions
+if(question1 == answer1){
+    score += 5;
+};
+if(question2 == answer2){
+    score += 5;
+};
+if(question3 == answer3){
+    score += 5;
+};
+if(question4 == answer4){
+    score += 5;
+};
+if(question5 == answer5){
+    score += 10;
+};
+if(question6 == answer6){
+    score += 10;
+};
+if(question7 == answer7){
+    score += 10;
+};
+if(question8 == answer8){
+    score += 10;
 }
-else{
-    console.log("ostatok is " + ost);
-}
+if(question4 == answer9){
+    score += 10;
+};
+if(question5 == answer10){
+    score += 10;
+};
+if(question11 == answer11){
+    score +=20;
+};
+//score alert
+alert("You have reached " + score + " points");
