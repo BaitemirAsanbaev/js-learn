@@ -31,36 +31,47 @@ let answer11 = "Baitemir";
 //questions functions
 if(question1 == answer1){
     score += 5;
+    console.log("1")
 };
 if(question2 == answer2){
     score += 5;
+    console.log("2")
 };
 if(question3 == answer3){
     score += 5;
+    console.log("3")
 };
 if(question4 == answer4){
     score += 5;
+    console.log("4")
 };
 if(question5 == answer5){
     score += 10;
+    console.log("5")
 };
 if(question6 == answer6){
     score += 10;
+    console.log("6")
 };
 if(question7 == answer7){
     score += 10;
+    console.log("7")
 };
 if(question8 == answer8){
     score += 10;
+    console.log("8")
 }
-if(question4 == answer9){
+if(question9 == answer9){
     score += 10;
+    console.log("9")
 };
-if(question5 == answer10){
+if(question10 == answer10){
     score += 10;
+    console.log("10")
 };
 if(question11 == answer11){
     score +=20;
+    console.log("11")
 };
 //score alert
 alert("You have reached " + score + " points");
