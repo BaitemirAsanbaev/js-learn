@@ -97,7 +97,7 @@ if(answer1 == "K" && answer2 == 273){
 else if(answer1 == "C" && answer2 == 0){
     console.log("correct");
 }
-else if(answer1 == "C" && answer2 == 32){
+else if(answer1 == "F" && answer2 == 32){
     console.log("correct");
 }
 else{
