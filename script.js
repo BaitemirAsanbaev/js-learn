@@ -78,7 +78,6 @@
 
 
 
-//homework!
 
 
 
@@ -86,20 +85,207 @@
 
 
 
-alert("In what temoerature ice will melt?");
 
-let answer1 = prompt("unit");
-let answer2 = prompt("temperature");
 
-if(answer1 == "K" && answer2 == 273){
-    console.log("correct");
+
+
+
+//
+// alert("In what temoerature ice will melt?");
+
+// let answer1 = prompt("unit");
+// let answer2 = prompt("temperature");
+
+// if(answer1 == "K" && answer2 == 273 || answer1 == "C" && answer2 == 0 || answer1 == "F" && answer2 == 32){
+//     console.log("correct");
+// }
+// else{
+//     console.log("incorrect");
+// }
+
+
+
+
+
+
+
+
+// alert("Speed of sound?");
+
+// let answer1 = prompt("unit");
+// let answer2 = prompt("speed");
+
+// if(answer1 == "metres per second" && answer2 == 343 || answer1 == "miles per hour" && answer2 == 1234 || answer1 == "kilometres per hour" && answer2 == 767){
+//     console.log("correct");
+// }
+// else{
+//     console.log("incorrect");
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let newYear = prompt("новый год на каком языке");
+// switch(newYear){
+//     case "English":
+//     case "Английский":
+//     case "Англисче":
+//         console.log("New Year");
+//         break;
+
+//     case "Kyrgyz":
+//     case "Кыргызский":
+//     case "Кыргызча":
+//         console.log("Жаны жыл");
+//         break;
+
+//     case "Russian":
+//     case "Русский":
+//     case "Орусча":
+//         console.log("Новый год");
+//         break;
+    
+//     default:
+//         console.log("не знаю о чем ты");
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//25.01.21
+
+
+
+//циклы
+
+// let i = 1;
+// while( i <= 20 ){
+//     if(i % 2 == 1){
+//         document.write(i + "<br>");
+//     }
+//     i++;
+// }
+
+
+// let i2 = 5;
+// do{
+//     document.write(i2 + "<br>");
+//     i2--;
+// } while (i2 >=1);
+
+
+// for (let i3 = 5; i3 >= 1; i3--){
+//     document.write(i3 + "<br>");
+// }
+// document.write("<table> <tr><td>hello</td><td>hello</td><td>hello</td></tr><table> <tr><td>hello</td><td>hello</td><td>hello</td></tr>  </table>")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//27.01.21
+
+
+
+// функции
+
+
+//declaretions
+function printLine(text){
+    document.write(text + "<br>")
 }
-else if(answer1 == "C" && answer2 == 0){
-    console.log("correct");
+
+function sayBye(firstName, lastName){
+    let fullName = firstName + " " + lastName;
+    printLine("arrividerchi " + fullName);
 }
-else if(answer1 == "F" && answer2 == 32){
-    console.log("correct");
+
+function returnMax(digit1, digit2){
+    if(digit1 > digit2){
+        printLine(digit1);
+    }
+    else if(digit1 < digit2){
+        printLine(digit2);
+    }
+    else{
+        printLine(digit1);
+    }
+};
+
+function printSum(a, b){
+    printLine(a + b);
 }
-else{
-    console.log("incorrect");
+function getSum(a, b){
+    return(a + b);
 }
+
+
+function printCount(num){
+    for(i = 1; i <= num; i++ ) {
+        printLine(i);
+    }
+}
+
+
+
+//return
+// sayBye("Baitemir", "Asanbaev");
+// returnMax(14, 115);
+// printSum(10, 15);
+// printSum(-5, -5);
+// printSum(-10, -10);
+printCount(11);
+
+
+
+// let sum = getSum(10, 10);
+// printLine(sum);
+
+
+
