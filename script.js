@@ -274,18 +274,66 @@ function printCount(num){
 
 
 
-//return
-// sayBye("Baitemir", "Asanbaev");
-// returnMax(14, 115);
-// printSum(10, 15);
-// printSum(-5, -5);
-// printSum(-10, -10);
+sayBye("Baitemir", "Asanbaev");
+returnMax(14, 115);
+printSum(10, 15);
+printSum(-5, -5);
+printSum(-10, -10);
 printCount(11);
 
 
 
-// let sum = getSum(10, 10);
-// printLine(sum);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//29.01.2021
+
+
+
+//объекты
+
+function print(text){
+    document.write(text + "<br>")
+}
+let object1 = new Object();
+let object2 = {};
+
+
+
+let user = {
+    firstName: "Baitemir",
+    lastName: "Asanbaev",
+    "will lives in US": true,
+};
+
+for (key in user){
+    print(key + ": " + user[key])
+}
+let finger = {
+    length: 8,
+    width: 1.2,
+    "has nail": true,
+    skin: true,
+    blood: false,
+    cut: function(skin, blood){
+        delete this [skin];
+        blood = true;
+    },
+    type: middle,
+    wrinkles: false,
+}
