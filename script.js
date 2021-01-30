@@ -324,16 +324,26 @@ let user = {
 for (key in user){
     print(key + ": " + user[key])
 }
+let person = {
+    mood = "good",
+}
 let finger = {
     length: 8,
     width: 1.2,
     "has nail": true,
     skin: true,
     blood: false,
+    type: "middle",
+    wrinkles: false,
+    owner: person,
     cut: function(skin, blood){
-        delete this [skin];
+        delete this.skin;
         blood = true;
     },
-    type: middle,
-    wrinkles: false,
+    disrespect: function(){
+        if( this.type = middle){
+            this.disrespect;
+        }
+        mood = "bad";
+    },
 }
