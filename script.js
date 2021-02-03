@@ -1,3 +1,15 @@
+function print(text){
+    document.write(text + "<br>")
+}
+
+
+
+
+
+
+
+
+
 // //variables
 
 // //score
@@ -237,49 +249,49 @@
 
 
 //declaretions
-function printLine(text){
-    document.write(text + "<br>")
-}
+// function printLine(text){
+//     document.write(text + "<br>")
+// }
 
-function sayBye(firstName, lastName){
-    let fullName = firstName + " " + lastName;
-    printLine("arrividerchi " + fullName);
-}
+// function sayBye(firstName, lastName){
+//     let fullName = firstName + " " + lastName;
+//     printLine("arrividerchi " + fullName);
+// }
 
-function returnMax(digit1, digit2){
-    if(digit1 > digit2){
-        printLine(digit1);
-    }
-    else if(digit1 < digit2){
-        printLine(digit2);
-    }
-    else{
-        printLine(digit1);
-    }
-};
+// function returnMax(digit1, digit2){
+//     if(digit1 > digit2){
+//         printLine(digit1);
+//     }
+//     else if(digit1 < digit2){
+//         printLine(digit2);
+//     }
+//     else{
+//         printLine(digit1);
+//     }
+// };
 
-function printSum(a, b){
-    printLine(a + b);
-}
-function getSum(a, b){
-    return(a + b);
-}
-
-
-function printCount(num){
-    for(i = 1; i <= num; i++ ) {
-        printLine(i);
-    }
-}
+// function printSum(a, b){
+//     printLine(a + b);
+// }
+// function getSum(a, b){
+//     return(a + b);
+// }
 
 
+// function printCount(num){
+//     for(i = 1; i <= num; i++ ) {
+//         printLine(i);
+//     }
+// }
 
-sayBye("Baitemir", "Asanbaev");
-returnMax(14, 115);
-printSum(10, 15);
-printSum(-5, -5);
-printSum(-10, -10);
-printCount(11);
+
+
+// sayBye("Baitemir", "Asanbaev");
+// returnMax(14, 115);
+// printSum(10, 15);
+// printSum(-5, -5);
+// printSum(-10, -10);
+// printCount(11);
 
 
 
@@ -307,43 +319,225 @@ printCount(11);
 
 //объекты
 
-function print(text){
-    document.write(text + "<br>")
-}
-let object1 = new Object();
-let object2 = {};
+// let object1 = new Object();
+// let object2 = {};
 
 
 
-let user = {
-    firstName: "Baitemir",
-    lastName: "Asanbaev",
-    "will lives in US": true,
-};
+// let user = {
+//     firstName: "Baitemir",
+//     lastName: "Asanbaev",
+//     "will lives in US": true,
+// };
 
-for (key in user){
-    print(key + ": " + user[key])
-}
-let person = {
-    mood = "good",
-}
-let finger = {
-    length: 8,
-    width: 1.2,
-    "has nail": true,
-    skin: true,
-    blood: false,
-    type: "middle",
-    wrinkles: false,
-    owner: person,
-    cut: function(skin, blood){
-        delete this.skin;
-        blood = true;
-    },
-    disrespect: function(){
-        if( this.type = middle){
-            this.disrespect;
-        }
-        mood = "bad";
-    },
-}
+// for (key in user){
+//     print(key + ": " + user[key])
+// }
+// let person = {
+//     mood = "good",
+// }
+// let finger = {
+//     length: 8,
+//     width: 1.2,
+//     "has nail": true,
+//     skin: true,
+//     blood: false,
+//     type: "middle",
+//     wrinkles: false,
+//     owner: person,
+//     cut: function(skin, blood){
+//         delete this.skin;
+//         blood = true;
+//     },
+//     disrespect: function(){
+//         if( this.type = middle){
+//             this.disrespect;
+//         }
+//         mood = "bad";
+//     },
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//02.01.21
+
+
+
+// let user1 = {
+//     firstName: "Elon",
+//     lastName: "Musk",
+//     sayHello(){
+//         print("good morning " + this.firstName + " " + this.lastName);
+//     }
+// }
+// let user2 = {
+//     firstName: "Bill",
+//     lastName: "Gates",
+//     sayHello(){
+//         print("good morning " + this.firstName + " " + this.lastName);
+//     }
+// }
+// let user3 = {
+//     firstName: "Murk",
+//     lastName: "Zuckerberg",
+//     sayHello(){
+//         print("good morning " + this.firstName + " " + this.lastName);
+//     }
+// }
+// let user4 = {
+//     firstName: "Baitemir",
+//     lastName: "Asanbaev",
+//     sayHello(){
+//         print("good morning " + this.firstName + " " + this.lastName);
+//     }
+// }
+// let user5 = {
+//     firstName: "Asanbai",
+//     lastName: "Baitemirov",
+//     sayHello(){
+//         print("good morning " + this.firstName + " " + this.lastName);
+//     }
+// }
+
+
+// print("Users list:" + "<br>")
+// user1.sayHello();
+// user2.sayHello();
+// user3.sayHello();
+// user4.sayHello();
+// user5.sayHello();
+
+
+
+// function User(firstName, lastName, prefix = " "){
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.prefix = prefix;
+//     this.sayHello = function(){
+//         print("hello " + prefix + this.firstName);
+//     }
+// }
+// let user = new User("Elon", "Musk", "mr. ");
+// let user1 = new User("Jeff", "Besos",);
+// let user2 = new User("Murk", "Zuckererg",);
+// let user3 = new User("Bruce", "Lee", "dr. ");
+// let user4 = new User("Baitemir", "Asanbaev", "sr. ");
+
+// user.sayHello();
+// user1.sayHello();
+// user2.sayHello();
+// user3.sayHello();
+// user4.sayHello();
+
+
+
+
+// function Apple(name, weight){
+//     this.name = name;
+//     this.weight = weight;
+//     this.toString = function(){
+//         return "Aplle type " + this.name;
+//     }
+//     this.valueOf = function(){
+//         return "Apple weight " + this.weight;
+//     }
+// }
+// let apple1 = new Apple("Aport", 150);
+
+// print(apple1 + +apple1);
+
+
+// let ex1 = "Hello world";
+// print(ex1.includes("o worr"));
+
+
+// function ex(a, b){
+//     // for(i = 1; i < b; i++){
+//     //     a *= a;
+//     // }
+//     return a
+// }
+// document.write(ex(5, 3));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 03.02.21
+
+
+//browser js
+
+
+
+
+// let hea = document.querySelector("h1");
+// let art = document.querySelector("article");
+// let par = document.querySelectorAll("p");
+// let list = document.querySelector("ul");
+
+// let exampleList = ["aplle", "banana", "grapes", "lemon"];
+// for (const fruit of exampleList) {
+//     let listLi = document.createElement("li");
+//     listLi.innerText = fruit;
+//     list.append(listLi);
+// }
+// list.prepend(listLi);
+
+// let exampleList = [
+//     {name: "Apple", weight: 20},
+//     {name: "Banana", weight: 30},
+//     {name: "Grapes", weight: 50},
+//     {name: "Lemon", weight: 10},
+// ];
+
+
+// for (const fruit of exampleList) {
+//     let lili = document.createElement("li");
+//     lili.innerText = fruit.name + " - " + fruit.weight;
+//     list.append("li")
+// }
+
+
+
+// let exampleList = {
+//     "apple": 10,
+//     "Bananas": 20,
+//     "Grapes": 30,
+//     "Lemon": 40,
+// }
+
+// for (exampleList[key] of exampleList) {
+//     let listLi = document.createElement("li");
+//     listLi.innerText = exampleList[key] + " - " + exampleList.key;
+//     list.append("listLi")
+// }
