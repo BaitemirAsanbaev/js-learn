@@ -1,6 +1,6 @@
-function print(text){
-    document.write(text + "<br>")
-}
+// function print(text){
+//     document.write(text + "<br>")
+// }
 
 
 
@@ -541,3 +541,34 @@ function print(text){
 //     listLi.innerText = exampleList[key] + " - " + exampleList.key;
 //     list.append("listLi")
 // }
+
+
+
+
+
+
+
+
+
+
+// 05.02.2021
+
+
+
+
+// let header = document.createElement("h1");
+// let list = document.createElement("ul");
+// header.innerText("JS");
+// document.body.append(header);
+
+// for (let i = 1; i<=5; i++){
+//     let listItem = document.createElement("li");
+//     let btn = document.createElement("button");
+//     btn.innerText("Example");
+//     btn.id = "example" + i;
+
+//     listItem.append(btn);
+//     list.append(listItem);
+// }
+// document.body.append(list);
+// print("fefewfwf");
